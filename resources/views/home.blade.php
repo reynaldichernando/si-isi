@@ -91,6 +91,8 @@ body {
 <div class="row">
     <div class="leftcolumn">
       <h3>Popular Post</h3>
+      <img src="assets/other/home_bg.jpg" alt="Bawa kontainer bersih dan kering" height="100px" width="100px">
+      
       <div class="fakeimg"><p>Image</p></div>
       <div class="fakeimg"><p>Image</p></div>
       <div class="fakeimg"><p>Image</p></div>
