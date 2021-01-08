@@ -18,7 +18,8 @@ body {
   float: left;
   width: 33.3%;
   background-color: #f1f1f1;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Middle column */
@@ -26,7 +27,8 @@ body {
   float: left;
   width: 33.3%;
   background-color: #f1f1f1;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Right column */
@@ -34,7 +36,8 @@ body {
   float: left;
   width: 33.3%;
   background-color: #f1f1f1;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -42,7 +45,10 @@ body {
 .card1 {
   background-image: url("assets/other/home_bg.jpg");
   padding: 20px;
-  margin: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%
 }
 .card2 {
