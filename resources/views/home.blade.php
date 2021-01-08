@@ -9,53 +9,26 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
   background: white;
 }
 
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
+/* Create 3 equal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 33.3%;
+}
+
+/* Middle column */
+.leftcolumn {   
+  float: left;
+  width: 33.3%;
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
+  width: 33.3%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
@@ -86,14 +59,6 @@ body {
   clear: both;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
@@ -119,7 +84,19 @@ body {
     </div>
 </div>
 <div class="row">
-    <div class="card2">
+    <div class="leftcolumn">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="middlecolumn">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="rightcolumn">
       <h3>Popular Post</h3>
       <div class="fakeimg"><p>Image</p></div>
       <div class="fakeimg"><p>Image</p></div>
