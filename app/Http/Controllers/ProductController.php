@@ -20,7 +20,6 @@ class ProductController extends Controller
         return view('admin.addProduct', [
             'role' => $role,
         ]);
-        // return view('admin.addProduct');
     }
 
     public function addProduct(Request $request)
@@ -62,12 +61,12 @@ class ProductController extends Controller
         Storage::disk('public')->put($path, file_get_contents($request->image));
 
         // find category id
-        $category_id = Category::where('name', '=', "$request->category");
+        $category_id = Category::where('name', '=', "$request->category")->first();
 
         // add new product
         $product = new Product;
         $product->name = $request->name;
-        $product->category = $category_id;
+        $product->category_id = $category_id->id;
         $product->price = $request->price;
         $product->stock = $request->stock;
         $product->description = $request->description;
