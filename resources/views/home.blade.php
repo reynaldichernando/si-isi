@@ -37,12 +37,6 @@ body {
   padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 /* Add a card effect for articles */
 .card1 {
@@ -90,24 +84,16 @@ body {
 </div>
 <div class="row">
     <div class="leftcolumn">
-      <h3>Popular Post</h3>
-      <img src="assets/other/home_bg.jpg" alt="Bawa kontainer bersih dan kering" height="100%" width="100%">
-      
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <img src="assets/other/home_bg.jpg" alt="Bawa kontainer bersih dan kering, lalu timbang" height="100%" width="100%">
+      <h3>Bawa kontainer bersih dan kering, lalu timbang</h3>
     </div>
     <div class="middlecolumn">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <img src="assets/other/home_bg.jpg" alt="Lakukan pengisian sebanyak yang Anda mau" height="100%" width="100%">
+      <h3>Lakukan pengisian sebanyak yang Anda mau</h3>
     </div>
     <div class="rightcolumn">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
+      <img src="assets/other/home_bg.jpg" alt="Timbang kembali lalu bayar" height="100%" width="100%">
+      <h3>Timbang kembali lalu bayar</h3>
     </div>
 </div>
 
