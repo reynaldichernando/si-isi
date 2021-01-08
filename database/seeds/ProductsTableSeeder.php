@@ -17,12 +17,47 @@ class ProductsTableSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'name' => 'Bamboo Charcoal Toothbrush Greater Good',
-                'price' => 15000 , 
+                'price' => 15000 ,
                 'description' => 'Sikat Gigi Bambu Greater Good adalah alternatif ramah lingkungan sikat plastik tradisional. Bulu sikat bebas BPA, terbuat dari bio-nilon (100% dapat didaur ulang) dilapisi dengan charcoal untuk membersihkan dan memutihkan gigi Anda secara alami dan lembut untuk gusi. Dirancang secara ergonomis agar terasa nyaman di tangan dan cukup fleksibel untuk menjangkau setiap sudut mulut.',
                 'image' => '',
                 'category_id' => 1,
                 'stock' => 173,
-                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'name' => 'Shampoo Head n Shoulders',
+                'price' => 16900 ,
+                'description' => '- Menghilangkan Ketombe Lebih Baik dari Shampo Anti-Ketombe Terkemuka
+                - Lebih Ampuh Menghilangkan Ketombe dan gatal di kulit kepala dibanding Shampo Anti-Ketombe Terkemuka',
+                'image' => '',
+                'category_id' => 1,
+                'stock' => 200,
+            ],
+            [
+                'name' => 'Rinso Laundry Disinfektan Cair',
+                'price' => 36700 ,
+                'description' => 'Rinso Laundry Disinfektan Baru! 10x lebih efektif bunuh kuman, berikan perlindungan maksimal pada pakaian keluarga. Pakai untuk merendam sebelum mencuci menggunakan detergen.',
+                'image' => '',
+                'category_id' => 2,
+                'stock' => 500,
+            ],
+            [
+                'name' => 'Rinso Anti Noda Classic Fresh Detergen Bubuk​',
+                'price' => 54600 ,
+                'description' => 'Rinso Anti Noda Classic Fresh BARU! Nikmati keharuman memikat dengan keharuman bunga melati dan mawar putih yang tahan lama. Formulasi anti nodanya mampu menghilangkan noda hanya dalam 1x kucek!​',
+                'image' => '',
+                'category_id' => 2,
+                'stock' => 500,
+            ],
+            [
+                'name' => 'So Klin Pembersihb Lantai​',
+                'price' => 54600 ,
+                'description' => 'Pembersih lantai
+                Bersih dan bebas kuman
+                99% ampuh membunuh kuman
+                Memberikan wangi yang segar didalam rumah atau ruangan Anda',
+                'image' => '',
+                'category_id' => 3,
+                'stock' => 500,
             ],
         ]);
     }
