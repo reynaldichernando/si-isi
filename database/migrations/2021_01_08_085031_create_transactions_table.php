@@ -19,7 +19,7 @@ class CreateTransactionsTable extends Migration
             $table->string('region');
             $table->text('address');
             $table->date('date');
-            $table->time('time');
+            $table->string('time');
             $table->string('phone');
             $table->string('email');
             $table->string('payment');
