@@ -44,12 +44,8 @@ body {
 /* Add a card effect for articles */
 .card1 {
   background-image: url("assets/other/home_bg.jpg");
-  padding: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%
+  padding: 20px 20px 20px 20px;
+  width: 100%;
 }
 .card2 {
   background-color: white;
