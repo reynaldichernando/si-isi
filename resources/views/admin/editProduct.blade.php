@@ -7,8 +7,6 @@
     <div class="col-sm-12">
         <div class="page-header"><h1>Tambah Produk</h1></div>
     </div>
-    <div class="card">
-    </div>
     <form action="{{ route('edit_product') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <!-- error message -->

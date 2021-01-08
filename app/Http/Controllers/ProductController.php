@@ -93,7 +93,7 @@ class ProductController extends Controller
             'name'              => 'required|string',
             'category'          => 'required|string',
             'price'             => 'required|integer|min:100',
-            'stock'             => 'required|integer|min:1',
+            'stock'             => 'required|integer',
             'description'       => 'required',
             'image'             => 'mimes:jpeg,jpg,png,gif',
         ];
@@ -108,7 +108,6 @@ class ProductController extends Controller
             'price.min'                  => 'Harga produk tidak boleh kurang dari 100.',
             'stock.required'             => 'Stok produk harus diisi.',
             'stock.integer'              => 'Stok produk harus angka.',
-            'stock.min'                  => 'Stok produk tidak boleh kurang dari 1.',
             'description.required'       => 'Deskripsi produk harus diisi.',
             'image.mimes'                => 'File gambar produk image harus antara jpeg, jpg, png, atau gif.',
         ];
