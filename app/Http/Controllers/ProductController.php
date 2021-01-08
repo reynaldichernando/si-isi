@@ -17,7 +17,7 @@ class ProductController extends Controller
         $role = 'guest';
         if(Auth::check()) $role = 'admin';
 
-        return view('addProduct', [
+        return view('admin.addProduct', [
             'role' => $role,
         ]);
         // return view('admin.addProduct');
