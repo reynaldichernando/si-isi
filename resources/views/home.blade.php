@@ -22,7 +22,7 @@ body {
 }
 
 /* Middle column */
-.leftcolumn {   
+.middlecolumn {   
   float: left;
   width: 33.3%;
   background-color: #f1f1f1;
