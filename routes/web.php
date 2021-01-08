@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+// login admin
+Route::get('/admin', 'ProductController@showAddProduct')->name('login');
 // tambah produk
 Route::get('/add-product', 'ProductController@showAddProduct')->name('add_product');
 Route::post('/add-product', 'ProductController@addProduct');
