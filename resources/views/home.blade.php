@@ -46,7 +46,7 @@ body {
 
 /* Add a card effect for articles */
 .card1 {
-  background-image: "assets/other/home_bg.jpg";
+  background-image: url("assets/other/home_bg.jpg");
   padding: 20px;
   margin-top: 20px;
 }
