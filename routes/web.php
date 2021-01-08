@@ -25,3 +25,5 @@ Route::post('/add-product', 'ProductController@addProduct');
 // edit produk
 Route::get('/edit-product={id}', 'ProductController@showEditProduct')->name('edit_product');
 Route::get('/edit-product={id}', 'ProductController@editProduct');
+// view transaction
+Route::get('/view-transaction', 'TransactionController@showTransaction');
