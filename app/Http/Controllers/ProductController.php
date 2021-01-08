@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
@@ -59,10 +61,13 @@ class ProductController extends Controller
         $path = $request->name.'.'.$extension;
         Storage::disk('public')->put($path, file_get_contents($request->image));
 
+        // find category id
+        $category_id = Category::where('name', '=', "$request->category");
+
         // add new product
         $product = new Product;
         $product->name = $request->name;
-        $product->category = $request->category;
+        $product->category = $category_id;
         $product->price = $request->price;
         $product->stock = $request->stock;
         $product->description = $request->description;
@@ -117,11 +122,14 @@ class ProductController extends Controller
         // throw message alert if the required inputs are not according to the rules
         if($validator->fails())
             return redirect()->back()->withErrors($validator)->withInput($request->all);
+        
+        // find category id
+        $category_id = Category::where('name', '=', "$request->category");
 
         // update all columns except image
         $product = Product::find($id);
         $product->name = $request->name;
-        $product->category = $request->category;
+        $product->category = $category_id;
         $product->price = $request->price;
         $product->stock = $request->stock;
         $product->description = $request->description;
