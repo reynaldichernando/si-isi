@@ -49,6 +49,7 @@ body {
   background-image: url("assets/other/home_bg.jpg");
   padding: 20px;
   margin-top: 20px;
+  width: 100%
 }
 .card2 {
   background-color: white;
