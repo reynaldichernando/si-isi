@@ -1,0 +1,20 @@
+div .row{
+    margin: 0px;
+    font-family: Cambria;
+}
+
+.page-header{
+    text-align: center;
+    color: #11999e;
+}
+
+#submit-btn{
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+#submit-btn button{
+    background-color: #11999e;
+    border-color: #11999e;
+    font-weight: bold;
+}
