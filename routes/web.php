@@ -20,3 +20,6 @@ use Illuminate\Support\Facades\Route;
 // tambah produk
 Route::get('/add-product', 'ProductController@showAddProduct')->name('add_product');
 Route::post('/add-product', 'ProductController@addProduct');
+// edit produk
+Route::get('/edit-product={id}', 'ProductController@showEditProduct')->name('edit_product');
+Route::get('/edit-product={id}', 'ProductController@editProduct');
