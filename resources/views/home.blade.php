@@ -42,7 +42,7 @@ body {
 .card1 {
   background-image: url("assets/other/home_bg.jpg");
   padding: 20px;
-  margin-top: 20px;
+  margin: 20px;
   width: 100%
 }
 .card2 {
