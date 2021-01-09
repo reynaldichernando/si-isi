@@ -1,0 +1,65 @@
+div .row{
+    margin: 0px;
+    font-family: Cambria;
+}
+
+#page-header{
+    text-align: center;
+    color: #40514e;
+}
+
+.input-group{
+    width: 570px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 17px;
+    margin-top: 17px;
+}
+
+form .input-group .input-group-append button{
+    background-color: #11999e;
+    border-color: #11999e;
+    color: white;
+}
+
+form .input-group .input-group-append button:hover{
+    background-color: #30e3ca;
+    border-color: #30e3ca;
+    color: #40514e;
+}
+
+.col-sm-3{
+    margin-bottom: 37px;
+    font-family: 'Times New Roman';
+    height: 450px;
+}
+
+#shoe-img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 13px;
+}
+
+.caption a, .caption a:hover{
+    padding-right: 3px;
+    padding-left: 3px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+#paging{
+    text-align: center;
+    margin-top: -33px;
+    margin-bottom: 21px;
+}
+
+.pagination>li.active>span{
+    background-color: #81b214 !important;
+    border-color: #81b214 !important;
+}
+
+.pagination>li.page-item>a{
+    color: black;
+}
