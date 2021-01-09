@@ -28,7 +28,7 @@
         </div>
         <!-- caller region  -->
         <div class="form-group mt-3">
-            <label for="category">Kecamatan</label>
+            <label for="region">Kecamatan</label>
             <select name="region" id="region" class="form-control">
                 <option value="Cakung"> Cakung </option>
                 <option value="Cempaka Putih"> Cempaka Putih </option>
@@ -78,18 +78,18 @@
         </div>
         <!-- caller address -->
         <div class="form-group">
-            <label for="price">Alamat</label>
-            <input type="text" class="form-control" name="price" placeholder="Masukkan alamat anda..." id="address">
+            <label for="address">Alamat</label>
+            <input type="text" class="form-control" name="address" placeholder="Masukkan alamat anda..." id="address">
         </div>
         <!-- caller date -->
         <div class="form-group">
-            <label for="stock">Tanggal Panggilan</label>
-            <input type="date" class="form-control">
+            <label for="date">Tanggal Panggilan</label>
+            <input type="date" class="form-control" name="address" id="address">
         </div>
         <!-- caller time -->
         <div class="form-group">
-            <label for="description">Waktu</label>
-            <select name="region" id="time" class="form-control">
+            <label for="time">Waktu</label>
+            <select name="time" id="time" class="form-control">
                 <option value="Pagi">Pagi</option>
                 <option value="Siang">Siang</option>
                 <option value="Malam">Malam</option>
@@ -97,18 +97,18 @@
         </div>
         <!-- caller phone -->
         <div class="form-group">
-            <label for="price">Nomor Handphone</label>
-            <input type="text" class="form-control" name="price" placeholder="Masukkan nomor telepon anda..." id="phone">
+            <label for="phone">Nomor Handphone</label>
+            <input type="text" class="form-control" name="phone" placeholder="Masukkan nomor telepon anda..." id="phone">
         </div>
         {{-- caller email  --}}
         <div class="form-group">
-            <label for="price">Email</label>
-            <input type="text" class="form-control" name="price" placeholder="Masukkan email anda..." id="email">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" placeholder="Masukkan email anda..." id="email">
         </div>
         {{-- caller payment --}}
         <div class="form-group">
-            <label for="description">Cara Pembayaran</label>
-            <select name="region" id="time" class="form-control">
+            <label for="payment">Cara Pembayaran</label>
+            <select name="payment" id="payment" class="form-control">
                 <option value="OVO">OVO</option>
                 <option value="Go Pay">Go Pay</option>
                 <option value="Dana">Dana</option>
