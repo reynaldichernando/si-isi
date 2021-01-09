@@ -12,7 +12,7 @@
         <a class="p-2 text-dark" href="/view-transaction">PEMESANAN</a>
         <a class="p-2 text-dark" href="/logout">LOGOUT</a>
     @else
-        <a class="p-2 text-dark" href="#">PANGGILAN RUMAH</a>
+        <a class="p-2 text-dark" href="/home-call">PANGGILAN RUMAH</a>
         <a class="p-2 text-dark" href="/product-list">PRODUK</a>
     @endif
     
