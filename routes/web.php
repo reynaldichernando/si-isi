@@ -17,16 +17,18 @@ Route::get('/', function () {
     return view('home');
 });
 
-// login admin
+// page => login admin
 Route::get('/admin', 'AuthController@showFormLogin')->name('login');
 Route::post('/admin', 'AuthController@login');
-// logout admin
+// page => logout admin
 Route::get('/logout', 'AuthController@logout');
-// tambah produk
+// page => tambah produk
 Route::get('/add-product', 'ProductController@showAddProduct')->name('add_product');
 Route::post('/add-product', 'ProductController@addProduct');
-// edit produk
+// page => edit produk
 Route::get('/edit-product={id}', 'ProductController@showEditProduct')->name('edit_product');
 Route::get('/edit-product={id}', 'ProductController@editProduct');
-// view transaction
+// page => hapus produk
+Route::get('/delete-product={id}', 'ProductController@deleteProduct');
+// page => pemesanan
 Route::get('/view-transaction', 'TransactionController@showTransaction');

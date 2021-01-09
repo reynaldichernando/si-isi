@@ -154,4 +154,23 @@ class ProductController extends Controller
         if($save) return redirect('/');
         else return redirect()->back();
     }
+
+    public function deleteProduct($id)
+    {
+        $validator = Validator::make(
+            ['id' => $id],
+            ['id' => 'required|integer'],
+        );
+
+        // throw message alert if the required inputs are not according to the rules
+        if($validator->fails())
+            return redirect()->back()->withErrors($validator->errors());
+        
+        // find cart by id
+        $product = Product::find($id);
+        // delete cart from database
+        $product->delete();
+
+        return redirect('/');
+    }
 }
