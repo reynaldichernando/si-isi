@@ -25,17 +25,17 @@
 <br><br><br><br>
 <h3 class="judul">CARA ISI ULANG</h3>
 <div class="clearfix">
-    <div class="box" style="background-color:#bbb">
-        <img src="assets/other/home_bg.jpg" alt="Bawa kontainer bersih dan kering, lalu timbang" height="100%" width="100%">
-        <h3>Bawa kontainer bersih dan kering, lalu timbang</h3>
+    <div class="box">
+        <img src="assets/other/refill.jpg" alt="Bawa kontainer bersih dan kering, lalu timbang" height="100%" width="100%">
+        <h4>Bawa kontainer bersih dan kering, lalu timbang</h4>
     </div>
-    <div class="box" style="background-color:#ccc">
-        <img src="assets/other/home_bg.jpg" alt="Lakukan pengisian sebanyak yang Anda mau" height="100%" width="100%">
-        <h3>Lakukan pengisian sebanyak yang Anda mau</h3>
+    <div class="box">
+        <img src="assets/other/refill.jpg" alt="Lakukan pengisian sebanyak yang Anda mau" height="100%" width="100%">
+        <h4>Lakukan pengisian sebanyak yang Anda mau</h4>
     </div>
-    <div class="box" style="background-color:#ddd">
-        <img src="assets/other/home_bg.jpg" alt="Timbang kembali lalu bayar" height="100%" width="100%">
-        <h3>Timbang kembali lalu bayar</h3>
+    <div class="box">
+        <img src="assets/other/refill.jpg" alt="Timbang kembali lalu bayar" height="100%" width="100%">
+        <h4>Timbang kembali lalu bayar</h4>
     </div>
 </div>
 
