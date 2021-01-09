@@ -5,7 +5,7 @@
 <div class="row">
     <!-- header name -->
     <div class="col-sm-12">
-        <div class="page-header"><h1>Tambah Produk</h1></div>
+        <div class="pb-2 mt-4 mb-2 border-bottom"><h1>Tambah Produk</h1></div>
     </div>
     <form action="{{ route('add_product') }}" method="POST" enctype="multipart/form-data">
         @csrf

@@ -4,7 +4,7 @@
 @section('body')
 <div class="row">
     <div class="col-sm-12">
-        <div class="page-header"><h1>Pesanan</h1></div>
+        <div class="pb-2 mt-4 mb-2 border-bottom"><h1>Pesanan</h1></div>
     </div>
     <div class="col-sm-12">
         <ul class="list-group">
