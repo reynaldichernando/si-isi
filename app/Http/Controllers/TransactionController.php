@@ -12,7 +12,7 @@ class TransactionController extends Controller
     public function showTransaction(){
         $role = 'guest';
         if(Auth::check()) $role = 'admin';
-        $transaction = Transaction::orderBy('date')->get();
+        $transaction = Transaction::orderBy('created_at')->get();
         
         // dd($transaction);
         return view('admin.viewTransaction', [
