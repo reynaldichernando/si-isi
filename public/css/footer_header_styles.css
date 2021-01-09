@@ -6,8 +6,11 @@
 .topnav {
     overflow: hidden;
     background-color: #11999e;
-    position: fixed;
+    /* position: fixed; */
+    
     top: 0;
+    left: 0;
+    right: 100%;
     width: 100%;
 }
 
