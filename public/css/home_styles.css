@@ -24,8 +24,8 @@ body {
 .center1 {
   padding: 70px 0;
   text-align: left;
-  border: 3px #8a938a;
-  background: #8a938a;
+  border: 3px #11999e   ;
+  background: #11999e;
   padding-left: 30px;
   padding-right: 30px;
   margin: 20px;
@@ -45,6 +45,8 @@ body {
   float: left;
   width: 33.33%;
   padding: 50px;
+  background-color:#e4f9f5;
+  border-radius: 25px;
 }
 
 .clearfix::after {
@@ -134,7 +136,7 @@ body {
 }
 
 .button5 {
-  background-color: #8a938a;
+  background-color: #11999e;
   color: white;
   border-radius: 25px;
   width: 200px;
