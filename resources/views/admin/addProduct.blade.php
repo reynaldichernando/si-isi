@@ -29,7 +29,7 @@
         <!-- product category -->
         <div class="form-group mt-3">
             <label for="category">Kategori Produk</label>
-            <select class="form-control" name="category" id="category">
+            <select class="custom-select" name="category" id="category">
                 @foreach ($categories as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
