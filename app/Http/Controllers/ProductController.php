@@ -12,6 +12,19 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
+    public function showProductList()
+    {
+        $role = 'guest';
+        if(Auth::check()) $role = 'admin';
+
+        $products = Product::orderBy('id', 'ASC')->get();
+
+        return view('admin.productList', [
+            'role' => $role,
+            'products' => $products,
+        ]);
+    }
+
     public function showAddProduct()
     {
         $role = 'guest';
@@ -84,7 +97,7 @@ class ProductController extends Controller
 
         $product = Product::find($id);
 
-        return view('editProduct', [
+        return view('admin.editProduct', [
             'role' => $role,
             'product' => $product,
         ]);

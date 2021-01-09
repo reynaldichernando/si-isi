@@ -1,0 +1,47 @@
+div .row{
+    margin: 0px;
+    font-family: Cambria;
+}
+
+h1{
+    text-align: center;
+    color: #11999e;
+}
+
+ul{
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.list-group li{
+    border-width: 2px;
+    background-color: #e4f9f5;
+    padding: 0px;
+}
+
+.list-group-item table{
+    margin-bottom: 0px;
+}
+
+#table-number{
+    width: 37px;
+}
+
+#table-header{
+    width: auto;
+}
+
+#edit-button{
+    text-align: center;
+    width: 50px;
+}
+
+#delete-button{
+    text-align: center;
+    width: 90px;
+}
+
+.list-group-item a, .list-group-item a:hover{
+    text-decoration: none;
+    color: #40514e;
+}
