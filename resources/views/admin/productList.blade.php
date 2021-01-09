@@ -17,7 +17,7 @@
                     <td id="table-number">{{ $index +1 }}</td>
                     <th scope="row" id="table-header"><a href="/detail-product={{ $product->id }}">{{ $product->name }}</a> </th>
                     <td id="delete-button"><a href="/detail-product={{ $product->id }}">Detail</a></td>
-                    <td id="edit-button"><a href="/edit-product={{ $product->id }}">Edit</a></td>
+                    <td id="edit-button"><a href="/edit-product={{ $product->id }}">Ubah</a></td>
                     <td id="delete-button"><a href="/delete-product={{ $product->id }}">Hapus</a></td>
                 </tr>
             </table>
