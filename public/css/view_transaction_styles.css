@@ -1,0 +1,23 @@
+div .row{
+    margin: 0px;
+    font-family: Cambria;
+}
+
+.page-header{
+    text-align: center;
+    color: #11999e;
+}
+
+.list-group li{
+    background-color: #e4f9f5;
+    color: #40514e;
+    font-size: 17px;
+}
+
+.list-group li{
+    border-width: 2px;
+}
+
+tr .table-header{
+    width: 400px;
+}
