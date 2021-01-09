@@ -10,8 +10,8 @@
         <ul class="list-group">
             @foreach ($transactions as $item)
             <li class="list-group-item">
-                <table class="table table-condensed">
-                    <thead class="thead-dark">
+                <table class="table table-borderless table-condensed">
+                    <thead>
                         <tr>
                             <th scope="col" class="table-header">Pemesanan dibuat pada {{ $item->created_at }}</th>
                             <th scope="col"></th>

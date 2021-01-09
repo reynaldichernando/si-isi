@@ -8,14 +8,14 @@ h1{
     color: #11999e;
 }
 
-.list-group li{
-    background-color: #e4f9f5;
-    color: #40514e;
-    font-size: 17px;
+ul{
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
 .list-group li{
     border-width: 2px;
+    background-color: #e4f9f5;
 }
 
 tr .table-header{
