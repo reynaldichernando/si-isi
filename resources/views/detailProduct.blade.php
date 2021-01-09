@@ -6,7 +6,7 @@
         <div class="col-sm-12">
             <div class="pb-2 mt-4 mb-2 border-bottom"><h1>{{$product->name}}</h1></div>
         </div>
-        <img src="{{$product->image}}" alt="ini gambar"> 
+        <img src="{{ url('/') }}/assets/products/{{ $product->image }}" alt="ini gambar"> 
         <table class="table table-borderless table-condensed">
             <tbody>
                 <tr>
