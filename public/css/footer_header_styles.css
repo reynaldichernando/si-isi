@@ -1,0 +1,15 @@
+footer {
+    box-sizing: border-box;
+    color: #40514e ;
+    background-color: black;
+}
+
+header {
+    box-sizing: border-box;
+    color: #40514e ;
+    background-color: black;
+}
+
+.h1{
+    color: blue;
+}
