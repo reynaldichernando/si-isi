@@ -20,6 +20,10 @@ div .row{
     object-fit: cover;
 }
 
+.row .table{
+    margin-bottom: 37px;
+}
+
 tr .table-header{
     width: 200px;
 }
