@@ -26,16 +26,16 @@
 <h3 class="judul">CARA ISI ULANG</h3>
 <div class="clearfix">
     <div class="box">
-        <img src="assets/other/refill.jpg" alt="Bawa kontainer bersih dan kering, lalu timbang" height="100%" width="100%">
+        <img src="assets/other/refill.jpg" alt="Bawa kontainer bersih dan kering, lalu timbang" width="170" height="170">
         <h4>Bawa kontainer bersih dan kering, lalu timbang</h4>
     </div>
     <div class="box">
-        <img src="assets/other/refill.jpg" alt="Lakukan pengisian sebanyak yang Anda mau" height="100%" width="100%">
+        <img src="assets/other/refill.jpg" alt="Lakukan pengisian sebanyak yang Anda mau" width="170" height="170">
         <h4>Lakukan pengisian sebanyak yang Anda mau</h4>
     </div>
     <div class="box">
-        <img src="assets/other/refill.jpg" alt="Timbang kembali lalu bayar" height="100%" width="100%">
-        <h4>Timbang kembali lalu bayar</h4>
+        <img src="assets/other/refill.jpg" alt="Timbang kembali lalu bayar" width="170" height="170">
+        <h4>Timbang kembali, lalu lakukan pembayaran</h4>
     </div>
 </div>
 
