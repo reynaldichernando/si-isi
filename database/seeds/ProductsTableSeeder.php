@@ -49,7 +49,7 @@ class ProductsTableSeeder extends Seeder
                 'stock' => 500,
             ],
             [
-                'name' => 'So Klin Pembersihb Lantai​',
+                'name' => 'So Klin Pembersih Lantai​',
                 'price' => 54600 ,
                 'description' => 'Pembersih lantai
                 Bersih dan bebas kuman
