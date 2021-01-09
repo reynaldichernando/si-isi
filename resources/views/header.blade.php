@@ -9,13 +9,14 @@
     
     @if ($auth)
         @if ($role == 'admin')
-            <a href="{{ url('/add-shoe') }}">Add Shoe</a>
-        @endif
-
-        @if($role == 'guest')
+            <a class="p-2 text-dark" href="#">ADMIN</a>
+        @else
             <a class="p-2 text-dark" href="#">PANGGILAN RUMAH</a>
             <a class="p-2 text-dark" href="#">PRODUK</a>
         @endif
+
+    @else
+        <a class="p-2 text-dark" href="#">ADMIN</a>
     @endif
 
   </nav>
