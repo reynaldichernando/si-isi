@@ -4,9 +4,8 @@
 
 <div class="head">
     <div class="topnav">
-
         <div class="left">
-            <a href="HOMO">HOMO</a>
+            <a href="HOMO"><img src="assets/other/logo.png" alt="HOMO TAK ADA"></a>
         </div>
 
         <div class="right">
