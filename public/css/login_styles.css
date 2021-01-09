@@ -1,0 +1,44 @@
+body{
+    background-color: #11999e;
+}
+
+.container{
+    margin: 0px;
+}
+
+.card-login{
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    margin: 6rem auto 25rem auto;
+    width: 500px;
+    border: 0px;
+    background-color: #e4f9f5;
+}
+
+.card-header, .card-footer{
+    border: 0px;    
+}
+
+h3{
+    text-align: center;
+    color: #40514e;
+}
+
+.input-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group-text{
+    width: 100px;
+}
+
+.card-footer button{
+    background-color: #40514e;
+    border-color: #40514e;
+}
+
+.card-footer button:hover{
+    background-color: #30e3ca;
+    border-color: #30e3ca;
+}

@@ -18,7 +18,10 @@ Route::get('/', function () {
 });
 
 // login admin
-Route::get('/admin', 'ProductController@showAddProduct')->name('login');
+Route::get('/admin', 'AuthController@showFormLogin')->name('login');
+Route::post('/admin', 'AuthController@login');
+// logout admin
+Route::get('/logout', 'AuthController@logout');
 // tambah produk
 Route::get('/add-product', 'ProductController@showAddProduct')->name('add_product');
 Route::post('/add-product', 'ProductController@addProduct');
