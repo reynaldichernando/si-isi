@@ -40,6 +40,19 @@ body {
 }
 
 /* Create 3 equal columns that floats next to each other */
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* Left column */
 .leftcolumn {   
   float: left;
