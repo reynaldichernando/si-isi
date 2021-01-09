@@ -15,7 +15,7 @@ class AuthController extends Controller
             // login succed
             return redirect('/');
         }
-        return view('login', ['auth' => $auth]); // login failed
+        return view('login'); // login failed
     }
  
     public function login(Request $request)
