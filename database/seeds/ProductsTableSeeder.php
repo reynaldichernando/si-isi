@@ -36,7 +36,7 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Rinso Laundry Disinfektan Cair',
                 'price' => 36700 ,
                 'description' => 'Rinso Laundry Disinfektan Baru! 10x lebih efektif bunuh kuman, berikan perlindungan maksimal pada pakaian keluarga. Pakai untuk merendam sebelum mencuci menggunakan detergen.',
-                'image' => '',
+                'image' => 'Rinso Laundry Disinfektan Cair.jpg',
                 'category_id' => 2,
                 'stock' => 500,
             ],

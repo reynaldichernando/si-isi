@@ -8,15 +8,20 @@ use Illuminate\Support\Facades\Auth;
 
 class TransactionController extends Controller
 {
-    //
     public function showTransaction(){
+<<<<<<< HEAD
         $role = 'guest';
         if(Auth::check()) $role = 'admin';
         $transaction = Transaction::orderBy('created_at')->get();
+=======
+        $auth = Auth::check();
+
+        $transaction = Transaction::orderBy('date')->get();
+>>>>>>> 5c4b28c6c4b43943a78e2f7600478d920d0b685d
         
-        // dd($transaction);
         return view('admin.viewTransaction', [
-            'role' => $role, 'transactions' => $transaction
+            'auth' => $auth,
+            'transactions' => $transaction,
         ]);
     }
 }

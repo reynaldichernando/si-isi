@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+// page => produk
+Route::get('/product', 'ProductController@viewProduct');
+
 // page => login admin
 Route::get('/admin', 'AuthController@showFormLogin')->name('login');
 Route::post('/admin', 'AuthController@login');

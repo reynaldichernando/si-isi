@@ -49,5 +49,14 @@
 .foot{
     background-color: #40514e;
     margin: 0;
+    padding: 10pt;
+}
+
+.foot img{
+    width: 35pt;
+    height: 35pt;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 

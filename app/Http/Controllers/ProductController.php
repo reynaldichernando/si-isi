@@ -12,6 +12,22 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
+    public function viewProduct(Request $request)
+    {
+        $auth = Auth::check();
+
+        $search = $request->input('search');
+        $products = Product::where('name', 'like', "%$search%")->paginate(4);
+        $categories = Category::all();
+
+
+        return view('guest.product', [
+            'auth' => $auth,
+            'categories' => $categories,
+            'products' => $products,
+        ]);
+    }
+
     public function showDetailProduct($id){
         $product = Product::find($id);
 
@@ -20,24 +36,22 @@ class ProductController extends Controller
 
     public function showProductList()
     {
-        $role = 'guest';
-        if(Auth::check()) $role = 'admin';
+        $auth = Auth::check();
 
         $products = Product::orderBy('id', 'ASC')->get();
 
         return view('admin.productList', [
-            'role' => $role,
+            'auth' => $auth,
             'products' => $products,
         ]);
     }
 
     public function showAddProduct()
     {
-        $role = 'guest';
-        if(Auth::check()) $role = 'admin';
+        $auth = Auth::check();
 
         return view('admin.addProduct', [
-            'role' => $role,
+            'auth' => $auth,
         ]);
     }
 
@@ -98,13 +112,12 @@ class ProductController extends Controller
 
     public function showEditProduct($id)
     {
-        $role = 'guest';
-        if(Auth::check()) $role = 'admin';
+        $auth = Auth::check();
 
         $product = Product::find($id);
 
         return view('admin.editProduct', [
-            'role' => $role,
+            'auth' => $auth,
             'product' => $product,
         ]);
         
@@ -191,7 +204,7 @@ class ProductController extends Controller
         // delete image from public assets
         $path = $product->image;
         Storage::disk('public')->delete($path);
-        
+
         // delete product from database
         $product->delete();
 
