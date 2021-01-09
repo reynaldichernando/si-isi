@@ -1,6 +1,6 @@
 <!-- styles css -->
 <link href="{{ asset('css/footer_header_styles.css') }}" rel="stylesheet">
-
+<style>
 /* Footer */
 .footer {
   padding: 20px;
@@ -13,5 +13,5 @@
 <div class="footer">
     <h1>INI FOOTER</h1>
 
-<style>
+
 
