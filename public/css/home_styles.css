@@ -49,7 +49,7 @@ body {
   border-radius: 25px;
   height: auto;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .clearfix::after {
@@ -100,6 +100,9 @@ body {
   text-align: center;
 }
 
+.row{
+  margin-top:30px
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
