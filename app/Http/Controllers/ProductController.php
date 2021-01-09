@@ -31,7 +31,9 @@ class ProductController extends Controller
     public function showDetailProduct($id){
         $product = Product::find($id);
 
-        return view('detailProduct', ['product' => $product]);
+        $auth = Auth::check();
+
+        return view('detailProduct', ['auth' => $auth, 'product' => $product]);
     }
 
     public function showProductList()
