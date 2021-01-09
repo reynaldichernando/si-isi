@@ -3,9 +3,18 @@ div .row{
     font-family: Cambria;
 }
 
-h1{
+#page-header{
     text-align: center;
-    color: #11999e;
+    color: #40514e;
+}
+
+#add-button{
+    text-align: center;
+    margin-top: 17px;
+}
+
+#add-button a:hover{
+    background-color: #11999e;
 }
 
 ul{
@@ -15,12 +24,13 @@ ul{
 
 .list-group li{
     border-width: 2px;
-    background-color: #e4f9f5;
+    background-color: #40514e;
     padding: 0px;
 }
 
 .list-group-item table{
     margin-bottom: 0px;
+    color: white;
 }
 
 #table-number{
@@ -43,5 +53,5 @@ ul{
 
 .list-group-item a, .list-group-item a:hover{
     text-decoration: none;
-    color: #40514e;
+    color: white;
 }

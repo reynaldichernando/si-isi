@@ -4,7 +4,10 @@
 @section('body')
 <div class="row">
     <div class="col-sm-12">
-        <div class="pb-2 mt-4 mb-2 border-bottom"><h1>Daftar Produk</h1></div>
+        <div class="pb-2 mt-4 mb-2 border-bottom"><h1 id="page-header">Daftar Produk</h1></div>
+    </div>
+    <div class="col-sm-12" id="add-button">
+        <a href="/add-product" class="btn btn-outline-dark">Tambah Produk</a>
     </div>
     <ul class="list-group col-sm-12">
         @foreach ($products as $index => $product)
@@ -21,8 +24,5 @@
         </li>
         @endforeach
     </ul>
-    <form action="/add-product">
-        <div id="submit-btn"><button class="btn btn-success" type="submit">Add Product</button></div>
-    </form>
 </div>
 @endsection
