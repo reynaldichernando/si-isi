@@ -12,6 +12,12 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
+    public function showDetailProduct($id){
+        $product = Product::find($id);
+
+        return view('detailProduct', ['product' => $product]);
+    }
+
     public function showProductList()
     {
         $role = 'guest';

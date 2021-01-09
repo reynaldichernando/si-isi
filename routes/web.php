@@ -35,3 +35,6 @@ Route::post('/edit-product={id}', 'ProductController@editProduct');
 Route::get('/delete-product={id}', 'ProductController@deleteProduct');
 // page => pemesanan
 Route::get('/view-transaction', 'TransactionController@showTransaction');
+
+// page => detail produk
+Route::get('/detail-product={id}', 'ProductController@showDetailProduct');
