@@ -1,6 +1,6 @@
 @extends('base')
 <!-- styles css -->
-<link href="{{ asset('css/home_styles.css') }}" rel="stylesheet">
+<link href="/css/home_styles.css" rel="stylesheet">
 @section('body')
 
 <div class="row">
@@ -15,17 +15,17 @@
         <br>
             <a href="{{ url('/home-call') }}"><button class="button button5">PESAN SEKARANG</button></a>
         <br><br>
-        
+
         <div class="center1">
             <h3>KEUNGGULAN</h3>
             <ul class="a">
                 <li><h6>Mobile Refill Station</h6><p>Kurangi polusi plastik sekali pakai dengan mengisi ulang produk rumah tangga dan perawatan pribadi Anda di Mobile Refill Station kami.</p></li>
                 <li><h6>Schedule A House Call</h6><p>Kami membawa isi ulang ke pintu Anda! Jadwalkan panggilan ke rumah tanpa kontak untuk isi ulang sesuai keinginan Anda.</p></li>
             </ul>
-            
-            
-            
-            
+
+
+
+
         </div>
     </div>
 

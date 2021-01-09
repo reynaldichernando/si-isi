@@ -33,7 +33,7 @@ body {
   color: white;
 }
 
-.banner { 
+.banner {
   width: 100%;
   height: auto;
   opacity: 0.6;
@@ -59,7 +59,7 @@ body {
 }
 
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: left;
   width: 33.3%;
   background-color: #f1f1f1;
@@ -68,7 +68,7 @@ body {
 }
 
 /* Middle column */
-.middlecolumn {   
+.middlecolumn {
   float: left;
   width: 33.3%;
   background-color: #f1f1f1;
@@ -92,7 +92,6 @@ body {
 
 /* Add a card effect for articles */
 .card1 {
-  background-image: url("assets/other/home_banner.jpg");
   background-repeat: no-repeat;
   padding: 20px 20px 20px 20px ;
   width: 100%;
@@ -112,7 +111,7 @@ body {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .middlecolumn, .rightcolumn {   
+  .leftcolumn, .middlecolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
