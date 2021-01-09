@@ -49,16 +49,56 @@ class ProductsTableSeeder extends Seeder
                 'stock' => 500,
             ],
             [
-                'name' => 'So Klin Pembersihb Lantai​',
+                'name' => 'So Klin Pembersih Lantai​',
                 'price' => 54600 ,
                 'description' => 'Pembersih lantai
                 Bersih dan bebas kuman
                 99% ampuh membunuh kuman
                 Memberikan wangi yang segar didalam rumah atau ruangan Anda',
-                'image' => 'So Klin Pembersihb Lantai.jpg',
+                'image' => 'So Klin Pembersih Lantai.jpg',
                 'category_id' => 3,
                 'stock' => 500,
             ],
+            [
+                'name' => 'Zero Waste Bathroom Kit 2​',
+                'price' => 290000,
+                'description' => 'Terdiri dari:\n
+                \n1 x Loofah
+                \n1 x Ara Handmade Soap
+                \n1 x Segara Naturals – 2in1 Shampoo and Conditioner Bar
+                \n1 x Yagi Natural Indonesia Cocoa Body Butter 50gr',
+                'image' => 'Zero Waste Bathroom Kit 2.jpg',
+                'category_id' => 1,
+                'stock' => 500,
+            ],
+            [
+                'name' => '​Zero Waste Bathroom Kit 1',
+                'price' =>  180000,
+                'description' => 'Terdiri dari:
+                1 x Loofah
+                1 x Ara Handmade Soap
+                1 x Yagi Natural Indonesia Cocoa Body Butter 50gr',
+                'image' => 'Zero Waste Bathroom Kit 1.jpg',
+                'category_id' => 1,
+                'stock' => 500,
+            ],
+            [
+                'name' => '2in1 Laundry and Dish Bar​',
+                'price' =>  30000,
+                'description' => '2in1 Laundry dan Dish Soap ini adalah sabun natural yang dibuat khusus untuk mencuci baju dan piring.',
+                'image' => '2in1 Laundry and Dish Bar.jpg',
+                'category_id' => 2,
+                'stock' => 500,
+            ],
+            [
+                'name' => '​2in1 Shampoo and Conditioner Bar',
+                'price' =>  108000,
+                'description' => 'Produk shampoo bar untuk rambut yang cenderung kering. 2in1 Shampoo and Conditioner Bar yang membersihkan dan menjaga kelembaban rambut kering, serta menutrisi rambut dengan vitamin b5, aloe vera, protein rambut alami yang ECO-CERT atau COSMOS Natural Cert untuk membantu rambut kering dan/atau wavy untuk jadi lebih manageable.',
+                'image' => '2in1 Shampoo and Conditioner Bar.jpg',
+                'category_id' => 1,
+                'stock' => 500,
+            ],
+
         ]);
     }
 }
