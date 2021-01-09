@@ -10,8 +10,10 @@
     <title>Si Isi</title>
 </head>
 <body>
+    @include('header')
     <div class="container">
         @yield('body')
     </div>
+    @include('footer')
 </body>
 </html>
