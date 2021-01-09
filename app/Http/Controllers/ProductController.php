@@ -142,12 +142,12 @@ class ProductController extends Controller
             return redirect()->back()->withErrors($validator)->withInput($request->all);
         
         // find category id
-        $category_id = Category::where('name', '=', "$request->category");
+        $category_id = Category::where('name', '=', "$request->category")->first();
 
         // update all columns except image
         $product = Product::find($id);
         $product->name = $request->name;
-        $product->category = $category_id;
+        $product->category_id = $category_id->id;
         $product->price = $request->price;
         $product->stock = $request->stock;
         $product->description = $request->description;
@@ -185,9 +185,14 @@ class ProductController extends Controller
         if($validator->fails())
             return redirect()->back()->withErrors($validator->errors());
         
-        // find cart by id
+        // find product by id
         $product = Product::find($id);
-        // delete cart from database
+
+        // delete image from public assets
+        $path = $product->image;
+        Storage::disk('public')->delete($path);
+        
+        // delete product from database
         $product->delete();
 
         return redirect('/');
