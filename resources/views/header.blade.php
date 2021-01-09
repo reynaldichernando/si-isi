@@ -1,23 +1,7 @@
-<!-- <link href="{{ asset('css/footer_header_styles.css') }}" rel="stylesheet">
-
-<div class="head">
-    <div class="topnav">
-        <div class="left">
-            <a href="{{ url('/') }}"><img src="assets/other/logo.png" alt="HOMO TAK ADA"></a>
-        </div>
-
-        <div class="right">
-            <a href="{{ url('/') }}">SI ISI</a>
-            <a href="#">PANGGILAN KAMI</a>
-            <a href="#">PRODUK</a>
-        </div>
-    </div>
-</div>
-<br> -->
 
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
   <h5 class="my-0 mr-md-auto font-weight-normal">
-    <a href="{{ url('/') }}"><img src="assets/other/logo.png" alt="HOMO TAK ADA"></a>
+    <a href="{{ url('/') }}"><img src="assets/other/logo.png" alt="HOMO TAK ADA" width="70" height="40"></a>
   </h5>
   
   <nav class="my-2 my-md-0 mr-md-3">
