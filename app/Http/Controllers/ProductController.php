@@ -16,9 +16,6 @@ class ProductController extends Controller
     {
         $auth = Auth::check();
 
-        $role = 'guest';
-        if($auth) $role = 'admin';
-
         $search = $request->input('search');
         $products = Product::where('name', 'like', "%$search%")->paginate(9);
         $categories = Category::all();
@@ -26,7 +23,6 @@ class ProductController extends Controller
 
         return view('guest.product', [
             'auth' => $auth,
-            'role' => $role,
             'categories' => $categories,
             'products' => $products,
         ]);
@@ -41,15 +37,11 @@ class ProductController extends Controller
     public function showProductList()
     {
         $auth = Auth::check();
-        
-        $role = 'guest';
-        if($auth) $role = 'admin';
 
         $products = Product::orderBy('id', 'ASC')->get();
 
         return view('admin.productList', [
             'auth' => $auth,
-            'role' => $role,
             'products' => $products,
         ]);
     }
@@ -57,13 +49,9 @@ class ProductController extends Controller
     public function showAddProduct()
     {
         $auth = Auth::check();
-        
-        $role = 'guest';
-        if($auth) $role = 'admin';
 
         return view('admin.addProduct', [
             'auth' => $auth,
-            'role' => $role,
         ]);
     }
 
@@ -125,15 +113,11 @@ class ProductController extends Controller
     public function showEditProduct($id)
     {
         $auth = Auth::check();
-        
-        $role = 'guest';
-        if($auth) $role = 'admin';
 
         $product = Product::find($id);
 
         return view('admin.editProduct', [
             'auth' => $auth,
-            'role' => $role,
             'product' => $product,
         ]);
         
