@@ -1,0 +1,24 @@
+div .row{
+    margin: 0px;
+    font-family: Cambria;
+}
+
+#page-header{
+    text-align: center;
+    color: #40514e;
+}
+
+.col-sm-12{
+    text-align: center;
+}
+
+.img-thumbnail{
+    width: 300px;
+    height: 300px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+tr .table-header{
+    width: 200px;
+}

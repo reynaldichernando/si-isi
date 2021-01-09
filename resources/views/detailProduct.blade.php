@@ -1,12 +1,14 @@
 @extends('base')
-
-<link href="{{ asset('css/view_transaction_styles.css') }}" rel="stylesheet">
+<!-- styles css -->
+<link href="{{ asset('css/detail_product_styles.css') }}" rel="stylesheet">
 @section('body')
     <div class="row">
         <div class="col-sm-12">
-            <div class="pb-2 mt-4 mb-2 border-bottom"><h1>{{$product->name}}</h1></div>
+            <div class="pb-2 mt-4 mb-2 border-bottom"><h1 id="page-header">{{$product->name}}</h1></div>
         </div>
-        <img src="{{ url('/') }}/assets/products/{{ $product->image }}" alt="ini gambar">
+        <div class="col-sm-12">
+            <img src="{{ url('/') }}/assets/products/{{ $product->image }}" alt="no image" class="img-thumbnail">
+        </div>
         <table class="table table-borderless table-condensed">
             <tbody>
                 <tr>
