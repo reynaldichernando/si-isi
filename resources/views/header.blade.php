@@ -13,7 +13,7 @@
         <a class="p-2 text-dark" href="/logout">LOGOUT</a>
     @else
         <a class="p-2 text-dark" href="#">PANGGILAN RUMAH</a>
-        <a class="p-2 text-dark" href="#">PRODUK</a>
+        <a class="p-2 text-dark" href="/product-list">PRODUK</a>
     @endif
     
 
