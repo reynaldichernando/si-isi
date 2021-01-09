@@ -12,7 +12,7 @@
         <table class="table table-borderless table-condensed">
             <tbody>
                 <tr>
-                    <th scope="row" class="table-header">Price per ml</th>
+                    <th scope="row" class="table-header">Price per 100 ml</th>
                     <td>{{$product->price}}</td>
                 </tr>
                 <tr>
