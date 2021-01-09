@@ -8,11 +8,11 @@
         <div class="pb-2 mt-4 mb-2 border-bottom"><h1 id="page-header">Produk</h1></div>
     </div>
     <!-- paginate searching -->
-    <form action="/" method="get" id="search-bar" class="col-sm-12">
+    <form action="/product" method="get" id="search-bar" class="col-sm-12">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Cari produk di sini..." name="search" value="{{ Request::input('search') }}">
             <div class="input-group-append">
-                <button class="btn btn-success" type="submit" href="/">Search</button>
+                <button class="btn btn-success" type="submit" href="/product">Search</button>
             </div>
         </div>
     </form>
