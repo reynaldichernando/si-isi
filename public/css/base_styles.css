@@ -1,0 +1,25 @@
+body{
+    padding: 0px;
+}
+
+#header a, #header a:hover{
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#footer{
+    background-color: #40514e;
+    margin: 0;
+    padding: 5pt;
+}
+
+#footer img{
+    width: 28pt;
+    height: 28pt;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
