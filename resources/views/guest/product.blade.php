@@ -16,14 +16,21 @@
             </div>
         </div>
     </form>
+    <!-- show products -->
     @foreach ($products as $product)
-        <div class="col-sm-3">
-            <a href="/detail-product={{ $product->id }}"><img src="{{ url('/') }}/assets/products/{{ $product->image }}" class="img-thumbnail" alt="No Image" id="product-img"></a>
-            <div class="caption text-center">
-                <a href="/product={{ $product->id }}">{{ $product->name }}</a>
-                <p>Rp. {{ number_format($product->price) }}/100ml</p>
+        <div class="col-sm-3 card">
+            <div class="card-body">
+                <a href="/detail-product={{ $product->id }}"><img src="{{ url('/') }}/assets/products/{{ $product->image }}" class="img-thumbnail" alt="No Image" id="product-img"></a>
+            </div>
+            <div class="card-footer">
+                <div class="caption text-center">
+                    <a href="/detail-product={{ $product->id }}">{{ $product->name }}</a>
+                    <p>Rp. {{ number_format($product->price) }}/100ml</p>
+                </div>
             </div>
         </div>
     @endforeach
+    <!-- paginate pages -->
+    <div class="col-sm-12" id="paging">{{ $products->withQueryString()->links() }}</div>
 </div>
 @endsection
