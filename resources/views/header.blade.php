@@ -6,8 +6,18 @@
   
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="{{ url('/') }}">SI ISI</a>
-    <a class="p-2 text-dark" href="#">PANGGILAN KAMI</a>
-    <a class="p-2 text-dark" href="#">PRODUK</a>
+    
+    @if ($auth)
+        @if ($role == 'admin')
+            <a href="{{ url('/add-shoe') }}">Add Shoe</a>
+        @endif
+
+        @if($role == 'guest')
+            <a class="p-2 text-dark" href="#">PANGGILAN RUMAH</a>
+            <a class="p-2 text-dark" href="#">PRODUK</a>
+        @endif
+    @endif
+
   </nav>
 
   <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
