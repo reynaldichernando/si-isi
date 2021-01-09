@@ -106,7 +106,7 @@ class ProductController extends Controller
         $product->image = $path;
         $save = $product->save();
 
-        if($save) return redirect('/');
+        if($save) return redirect('/product-list');
         else return redirect()->back();
     }
 
@@ -181,7 +181,7 @@ class ProductController extends Controller
         // save update
         $save = $product->save();
 
-        if($save) return redirect('/');
+        if($save) return redirect('/product-list');
         else return redirect()->back();
     }
 
@@ -206,6 +206,6 @@ class ProductController extends Controller
         // delete product from database
         $product->delete();
 
-        return redirect('/');
+        return redirect('/product-list');
     }
 }

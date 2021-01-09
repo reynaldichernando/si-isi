@@ -17,6 +17,11 @@ div .row{
     height: 300px;
     margin-top: 21px;
     margin-bottom: 21px;
+    object-fit: cover;
+}
+
+.row .table{
+    margin-bottom: 37px;
 }
 
 tr .table-header{
