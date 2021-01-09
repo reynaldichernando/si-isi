@@ -1,3 +1,8 @@
+body{
+    background-color: #11999e !important;
+}
+
+
 div .row{
     margin: 0px;
     font-family: Cambria;
@@ -5,7 +10,7 @@ div .row{
 
 #page-header{
     text-align: center;
-    color: #40514e;
+    color: white;
 }
 
 #add-button{
@@ -13,8 +18,13 @@ div .row{
     margin-top: 17px;
 }
 
+#add-button a{
+    color: white;
+}
+
 #add-button a:hover{
-    background-color: #11999e;
+    background-color: #30e3ca;
+    color: #40514e;
 }
 
 ul{
