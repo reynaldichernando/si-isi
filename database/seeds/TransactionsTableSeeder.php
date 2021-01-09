@@ -33,7 +33,7 @@ class TransactionsTableSeeder extends Seeder
                 'time' => 'Siang',
                 'phone' => '+62216900546',
                 'email' => 'jonmama@gmail.com',
-                'payment' => 'GoPay',
+                'payment' => 'Go Pay',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
@@ -44,7 +44,7 @@ class TransactionsTableSeeder extends Seeder
                 'time' => 'Sore',
                 'phone' => '+62213900899',
                 'email' => 'bambang_kukuruyuk@gmail.com',
-                'payment' => 'cash',
+                'payment' => 'Dana',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
@@ -55,7 +55,7 @@ class TransactionsTableSeeder extends Seeder
                 'time' => 'Siang',
                 'phone' => '+6281219474105',
                 'email' => '@gmail.com',
-                'payment' => 'GoPay',
+                'payment' => 'Go Pay',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
@@ -66,7 +66,7 @@ class TransactionsTableSeeder extends Seeder
                 'time' => 'Sore',
                 'phone' => '+62215303555',
                 'email' => 'bill_smolgate@gmail.com',
-                'payment' => 'GoPay',
+                'payment' => 'Go Pay',
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ],
         ]);
