@@ -113,12 +113,14 @@ class ProductController extends Controller
     public function showEditProduct($id)
     {
         $auth = Auth::check();
+        $categories = Category::all();
 
         $product = Product::find($id);
 
         return view('admin.editProduct', [
             'auth' => $auth,
             'product' => $product,
+            'categories' => $categories,
         ]);
 
     }
@@ -127,7 +129,7 @@ class ProductController extends Controller
     {
         $rules = [
             'name'              => 'required|string',
-            'category'          => 'required|string',
+            'category'          => 'required',
             'price'             => 'required|integer|min:100',
             'stock'             => 'required|integer',
             'description'       => 'required',
@@ -138,7 +140,6 @@ class ProductController extends Controller
             'name.required'              => 'Nama produk harus diisi.',
             'name.string'                => 'Nama produk harus string.',
             'category.required'          => 'Kategori produk harus diisi.',
-            'category.string'            => 'Kategori produk harus string.',
             'price.required'             => 'Harga produk harus diisi.',
             'price.integer'              => 'Harga produk harus angka.',
             'price.min'                  => 'Harga produk tidak boleh kurang dari 100.',
@@ -154,13 +155,10 @@ class ProductController extends Controller
         if($validator->fails())
             return redirect()->back()->withErrors($validator)->withInput($request->all);
 
-        // find category id
-        $category_id = Category::where('name', '=', "$request->category")->first();
-
         // update all columns except image
         $product = Product::find($id);
         $product->name = $request->name;
-        $product->category_id = $category_id->id;
+        $product->category_id = $request->category;
         $product->price = $request->price;
         $product->stock = $request->stock;
         $product->description = $request->description;
