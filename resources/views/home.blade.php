@@ -46,7 +46,7 @@ body {
   background-image: url("assets/other/home_banner.jpg");
   background-repeat: no-repeat;
   padding: 20px 20px 20px 20px ;
-  width: 1349px;
+  width: 100%;
   height: 420px;
 }
 .card2 {
