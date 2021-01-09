@@ -27,7 +27,7 @@
                 <a class="p-2 text-dark" href="/logout">LOGOUT</a>
             @else
                 <a class="p-2 text-dark" href="/home-call">PANGGILAN RUMAH</a>
-                <a class="p-2 text-dark" href="/product-list">PRODUK</a>
+                <a class="p-2 text-dark" href="/product">PRODUK</a>
             @endif
         </nav>
     </div>
