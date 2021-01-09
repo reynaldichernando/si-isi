@@ -1,3 +1,5 @@
+<!-- styles css -->
+<link href="{{ asset('css/footer_header_styles.css') }}" rel="stylesheet">
 <style>
 /* Footer */
 .footer {
@@ -7,6 +9,9 @@
   margin-top: 20px;
 }
 </style>
+
 <div class="footer">
-  <h2>Footer</h2>
+    <h1>INI FOOTER</h1>
 </div>
+
+

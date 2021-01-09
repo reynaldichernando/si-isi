@@ -23,5 +23,8 @@
         </li>
         @endforeach
     </ul>
+    <form action="/add-product">
+        <div id="submit-btn"><button class="btn btn-success" type="submit">Add Product</button></div>
+    </form>
 </div>
 @endsection

@@ -13,6 +13,7 @@ class TransactionController extends Controller
         $role = 'guest';
         if(Auth::check()) $role = 'admin';
         $transaction = Transaction::orderBy('date')->get();
+        
         // dd($transaction);
         return view('admin.viewTransaction', [
             'role' => $role, 'transactions' => $transaction
