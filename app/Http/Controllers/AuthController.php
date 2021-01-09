@@ -10,11 +10,12 @@ class AuthController extends Controller
 {
     public function showFormLogin()
     {
-        if (Auth::check()) { 
+        $auth = Auth::check();
+        if ($auth) { 
             // login succed
             return redirect('/');
         }
-        return view('login'); // login failed
+        return view('login', ['auth' => $auth]); // login failed
     }
  
     public function login(Request $request)
