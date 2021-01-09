@@ -3,9 +3,9 @@ div .row{
     font-family: Cambria;
 }
 
-h1{
+#page-header{
     text-align: center;
-    color: #11999e;
+    color: #40514e;
 }
 
 #submit-btn{
@@ -16,5 +16,11 @@ h1{
 #submit-btn button{
     background-color: #11999e;
     border-color: #11999e;
+    font-weight: bold;
+}
+
+#submit-btn button:hover{
+    background-color: #40514e;
+    border-color: #40514e;
     font-weight: bold;
 }

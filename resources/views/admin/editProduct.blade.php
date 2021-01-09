@@ -5,9 +5,10 @@
 <div class="row">
     <!-- header name -->
     <div class="col-sm-12">
-        <div class="pb-2 mt-4 mb-2 border-bottom"><h1>Tambah Produk</h1></div>
+        <div class="pb-2 mt-4 mb-2 border-bottom"><h1 id="page-header">Ubah Produk</h1></div>
     </div>
-    <form action="{{ route('edit_product') }}" method="POST" enctype="multipart/form-data">
+    <div class="col-sm-2"></div>
+    <form action="{{ route('edit_product', ['id' => $product->id]) }}" method="POST" enctype="multipart/form-data" class="col-sm-8">
         @csrf
         <!-- error message -->
         @if(count($errors) > 0)
@@ -30,7 +31,7 @@
         <div class="form-group mt-3">
             <label for="category">Kategori Produk</label>
             <input type="text" class="form-control" name="category" placeholder="Masukkan kategori produk di sini..."
-                id="category" value="{{ $product->category }}">
+                id="category" value="{{ $product->category->name }}">
         </div>
         <!-- product price -->
         <div class="form-group">
@@ -42,7 +43,8 @@
         <!-- product stock -->
         <div class="form-group">
             <label for="stock">Stok Produk</label>
-            <input type="text" class="form-control" name="stock" placeholder="Masukkan jumlah stok produk di sini..." id="stock">
+            <input type="text" class="form-control" name="stock" placeholder="Masukkan jumlah stok produk di sini..."
+                id="stock" value="{{ $product->stock }}">
         </div>
         <!-- product decription -->
         <div class="form-group">
@@ -55,7 +57,8 @@
             <label for="image">Gambar Produk</label>
             <input type="file" class="form-control-file" name="image" id="image">
         </div>
-        <div id="submit-btn"><button class="btn btn-success" type="submit">Submit</button></div>
+        <div id="submit-btn"><button class="btn btn-success btn-block" type="submit">Submit</button></div>
     </form>
+    <div class="col-sm-2"></div>
 </div>
 @endsection

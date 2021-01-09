@@ -28,7 +28,7 @@ Route::get('/product-list', 'ProductController@showProductList');
 // page => tambah produk
 Route::get('/add-product', 'ProductController@showAddProduct')->name('add_product');
 Route::post('/add-product', 'ProductController@addProduct');
-// page => edit produk
+// page => ubah produk
 Route::get('/edit-product={id}', 'ProductController@showEditProduct')->name('edit_product');
 Route::post('/edit-product={id}', 'ProductController@editProduct');
 // page => hapus produk
