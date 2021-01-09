@@ -1,5 +1,5 @@
 @extends('base')
-
+<link href="{{ asset('css/add_edit_product_styles.css') }}" rel="stylesheet">
 @section('body')
     <div class="col-sm-12">
         <div class="page-header"><h1>View Transaction</h1></div>
