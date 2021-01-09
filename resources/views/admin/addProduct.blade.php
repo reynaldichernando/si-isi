@@ -29,7 +29,11 @@
         <!-- product category -->
         <div class="form-group mt-3">
             <label for="category">Kategori Produk</label>
-            <input type="text" class="form-control" name="category" placeholder="Masukkan kategori produk di sini..." id="category">
+            <select class="form-control" name="category" id="category">
+                @foreach ($categories as $category)
+                    <option value="{{$category->id}}">{{$category->name}}</option>
+                @endforeach
+            </select>
         </div>
         <!-- product price -->
         <div class="form-group">

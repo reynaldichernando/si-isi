@@ -51,9 +51,11 @@ class ProductController extends Controller
     public function showAddProduct()
     {
         $auth = Auth::check();
+        $categories = Category::all();
 
         return view('admin.addProduct', [
             'auth' => $auth,
+            'categories' => $categories,
         ]);
     }
 
@@ -61,7 +63,7 @@ class ProductController extends Controller
     {
         $rules = [
             'name'              => 'required|string',
-            'category'          => 'required|string',
+            'category'          => 'required',
             'price'             => 'required|integer|min:100',
             'stock'             => 'required|integer|min:1',
             'description'       => 'required',
@@ -72,7 +74,6 @@ class ProductController extends Controller
             'name.required'              => 'Nama produk harus diisi.',
             'name.string'                => 'Nama produk harus string.',
             'category.required'          => 'Kategori produk harus diisi.',
-            'category.string'            => 'Kategori produk harus string.',
             'price.required'             => 'Harga produk harus diisi.',
             'price.integer'              => 'Harga produk harus angka.',
             'price.min'                  => 'Harga produk tidak boleh kurang dari 100.',
@@ -95,13 +96,10 @@ class ProductController extends Controller
         $path = $request->name.'.'.$extension;
         Storage::disk('public')->put($path, file_get_contents($request->image));
 
-        // find category id
-        $category_id = Category::where('name', '=', "$request->category")->first();
-
         // add new product
         $product = new Product;
         $product->name = $request->name;
-        $product->category_id = $category_id->id;
+        $product->category_id = $request->category;
         $product->price = $request->price;
         $product->stock = $request->stock;
         $product->description = $request->description;
@@ -122,7 +120,7 @@ class ProductController extends Controller
             'auth' => $auth,
             'product' => $product,
         ]);
-        
+
     }
 
     public function editProduct(Request $request, $id)
@@ -155,7 +153,7 @@ class ProductController extends Controller
         // throw message alert if the required inputs are not according to the rules
         if($validator->fails())
             return redirect()->back()->withErrors($validator)->withInput($request->all);
-        
+
         // find category id
         $category_id = Category::where('name', '=', "$request->category")->first();
 
@@ -199,7 +197,7 @@ class ProductController extends Controller
         // throw message alert if the required inputs are not according to the rules
         if($validator->fails())
             return redirect()->back()->withErrors($validator->errors());
-        
+
         // find product by id
         $product = Product::find($id);
 
