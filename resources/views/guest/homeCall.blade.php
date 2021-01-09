@@ -88,13 +88,31 @@
         </div>
         <!-- caller time -->
         <div class="form-group">
-            <label for="description">Deskripsi Produk</label>
-            <input type="text" class="form-control" name="description" placeholder="Masukkan deskripsi produk di sini..." id="description">
+            <label for="description">Waktu</label>
+            <select name="region" id="time" class="form-control">
+                <option value="Pagi">Pagi</option>
+                <option value="Siang">Siang</option>
+                <option value="Malam">Malam</option>
+            </select>
         </div>
-        <!-- shoe image -->
+        <!-- caller phone -->
         <div class="form-group">
-            <label for="image">Gambar Produk</label>
-            <input type="file" class="form-control-file" name="image" id="image">
+            <label for="price">Nomor Handphone</label>
+            <input type="text" class="form-control" name="price" placeholder="Masukkan nomor telepon anda..." id="phone">
+        </div>
+        {{-- caller email  --}}
+        <div class="form-group">
+            <label for="price">Email</label>
+            <input type="text" class="form-control" name="price" placeholder="Masukkan email anda..." id="email">
+        </div>
+        {{-- caller payment --}}
+        <div class="form-group">
+            <label for="description">Cara Pembayaran</label>
+            <select name="region" id="time" class="form-control">
+                <option value="OVO">OVO</option>
+                <option value="Go Pay">Go Pay</option>
+                <option value="Dana">Dana</option>
+            </select>
         </div>
         <div id="submit-btn"><button class="btn btn-success btn-block" type="submit">Submit</button></div>
     </form>
