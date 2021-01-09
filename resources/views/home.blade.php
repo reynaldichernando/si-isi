@@ -43,8 +43,8 @@ body {
 
 /* Add a card effect for articles */
 .card1 {
-  background-image: url("assets/other/home_bg.jpg");
-  padding: 20px 20px 20px 20px;
+  background-image: url("assets/other/home_banner.jpg");
+  padding: 20px 20px 20px 20px ;
   width: 100%;
 }
 .card2 {
