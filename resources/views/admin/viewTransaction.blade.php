@@ -1,6 +1,6 @@
 @extends('base')
-<!-- styles css -->
-<link href="{{ asset('css/view_transaction_styles.css') }}" rel="stylesheet">
+    <!-- styles css -->
+    <link href="{{ asset('css/view_transaction_styles.css') }}" rel="stylesheet">
 @section('body')
 <div class="row">
     <div class="col-sm-12">
