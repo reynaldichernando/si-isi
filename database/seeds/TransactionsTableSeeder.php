@@ -17,7 +17,7 @@ class TransactionsTableSeeder extends Seeder
             [
                 'name' => 'Mikhaya',
                 'region' => 'Tanah Abang',
-                'address' => 'Jl. Pejompongan Raya No.17, RT.10/RW.6, Bend. Hilir, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10210',
+                'address' => 'Jl. Pejompongan Raya No.17, RT.10/RW.6',
                 'date' => Carbon::now(),
                 'time' => 'Pagi',
                 'phone' => '+6281327594567',
@@ -28,7 +28,7 @@ class TransactionsTableSeeder extends Seeder
             [
                 'name' => 'Jones',
                 'region' => 'Pademangan',
-                'address' => 'Jl. Ancol Barat, A5 / C No. 12, Ancol, Pademangan, RT.4/RW.11, Ancol, Kec. Pademangan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14430',
+                'address' => 'Jl. Ancol Barat, A5 / C No. 12',
                 'date' => Carbon::now(),
                 'time' => 'Siang',
                 'phone' => '+62216900546',
@@ -39,7 +39,7 @@ class TransactionsTableSeeder extends Seeder
             [
                 'name' => 'Bambang',
                 'region' => 'Menteng',
-                'address' => 'Jl. Teuku Umar No.1, RT.1/RW.1, Gondangdia, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10350',
+                'address' => 'Jl. Teuku Umar No.1, RT.1/RW.1',
                 'date' => Carbon::now(),
                 'time' => 'Sore',
                 'phone' => '+62213900899',
@@ -50,7 +50,7 @@ class TransactionsTableSeeder extends Seeder
             [
                 'name' => 'Markbujuk',
                 'region' => 'Ciracas',
-                'address' => 'Jl. Masjid Nurul Hidayah No.7, RT.11/RW.12, Klp. Dua Wetan, Kec. Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13730',
+                'address' => 'Jl. Masjid Nurul Hidayah No.7',
                 'date' => Carbon::now(),
                 'time' => 'Siang',
                 'phone' => '+6281219474105',
@@ -61,7 +61,7 @@ class TransactionsTableSeeder extends Seeder
             [
                 'name' => 'Bill Door',
                 'region' => 'Kebon Jeruk',
-                'address' => 'Jl. Perjuangan No.9 10, RT.11/RW.10, Kb. Jeruk, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530',
+                'address' => 'Jl. Perjuangan No.9 10',
                 'date' => Carbon::now(),
                 'time' => 'Sore',
                 'phone' => '+62215303555',
