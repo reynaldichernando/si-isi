@@ -46,6 +46,7 @@ body {
   background-image: url("assets/other/home_banner.jpg");
   padding: 20px 20px 20px 20px ;
   width: 100%;
+  height: 100%;
 }
 .card2 {
   background-color: white;
