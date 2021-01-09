@@ -1,0 +1,61 @@
+body{
+    background-color: #e4f9f5 !important;
+}
+
+div .row{
+    margin: 0px;
+    font-family: Cambria;
+}
+
+#page-header{
+    text-align: center;
+    color: #40514e;
+}
+
+#order-btn{
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+#order-btn button{
+    background-color: #40514e;
+    border-color: #40514e;
+    font-weight: bold;
+}
+
+#order-btn button:hover{
+    background-color: #11999e;
+    border-color: #11999e;
+    font-weight: bold;
+}
+
+.modal-dialog{
+    overflow-y: initial !important;
+}
+
+.modal-header{
+    background-color: #11999e;
+    color: white;
+}
+
+.modal-body{
+    height: 420px;
+    overflow-y: auto;
+}
+
+.modal-footer{
+    background-color: #11999e;
+    color: white;
+}
+
+.modal-footer button{
+    color: white;
+    font-weight: bold;
+}
+
+.modal-footer button:hover{
+    background-color: #40514e;
+    border-color: #40514e;
+    color: white;
+    font-weight: bold;
+}

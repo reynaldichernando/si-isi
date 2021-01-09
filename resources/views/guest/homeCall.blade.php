@@ -1,6 +1,5 @@
 @extends('base')
-
-<link href="{{ asset('css/add_edit_product_styles.css') }}" rel="stylesheet">
+<link href="{{ asset('css/home_call_styles.css') }}" rel="stylesheet">
 @section('body')
 <div class="row">
     <!-- header name -->
@@ -29,7 +28,7 @@
         <!-- caller region  -->
         <div class="form-group mt-3">
             <label for="region">Kecamatan</label>
-            <select name="region" id="region" class="form-control">
+            <select name="region" id="region" class="custom-select">
                 <option value="Cakung"> Cakung </option>
                 <option value="Cempaka Putih"> Cempaka Putih </option>
                 <option value="Cengkareng"> Cengkareng </option>
@@ -80,6 +79,7 @@
         <div class="form-group">
             <label for="address">Alamat</label>
             <input type="text" class="form-control" name="address" placeholder="Masukkan alamat anda..." id="address">
+            <small id="addressHelp" class="form-text text-muted">Alamat yang dimasukkan merupakan nama jalan sampai no rumah.</small>
         </div>
         <!-- caller date -->
         <div class="form-group">
@@ -89,7 +89,7 @@
         <!-- caller time -->
         <div class="form-group">
             <label for="time">Waktu</label>
-            <select name="time" id="time" class="form-control">
+            <select name="time" id="time" class="custom-select">
                 <option value="Pagi">Pagi</option>
                 <option value="Siang">Siang</option>
                 <option value="Malam">Malam</option>
@@ -100,21 +100,51 @@
             <label for="phone">Nomor Handphone</label>
             <input type="text" class="form-control" name="phone" placeholder="Masukkan nomor telepon anda..." id="phone">
         </div>
-        {{-- caller email  --}}
+        <!-- caller email -->
         <div class="form-group">
             <label for="email">Email</label>
             <input type="text" class="form-control" name="email" placeholder="Masukkan email anda..." id="email">
         </div>
-        {{-- caller payment --}}
+        <!-- caller payment -->
         <div class="form-group">
             <label for="payment">Cara Pembayaran</label>
-            <select name="payment" id="payment" class="form-control">
+            <select name="payment" id="payment" class="custom-select">
                 <option value="OVO">OVO</option>
-                <option value="Go Pay">Go Pay</option>
+                <option value="Go Pay">GoPay</option>
                 <option value="Dana">Dana</option>
             </select>
         </div>
-        <div id="submit-btn"><button class="btn btn-success btn-block" type="submit">Submit</button></div>
+        <!-- modal button -->
+        <div id="order-btn">
+            <button class="btn btn-success btn-block" type="button" data-toggle="modal"
+                data-target="#confirmation">Pesan</button>
+        </div>
+        <!-- modal -->
+        <div class="modal" id="confirmation">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Something</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- available products -->
+                        <h5>Produk Tersedia</h3>
+                        <ul class="list-group">
+                            @foreach ($products as $product)
+                                <li class="list-group-item">{{ $product->name }}</li>
+                            @endforeach
+                        </ul>
+                        <h5>Harga Pemesanan</h5>
+                        <!-- <h5>Cara Pembayaran <span>{{ \Request::get('payment') }}</span></h5> -->
+                        <h5>Cara Pembayaran</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-dark" type="submit">Konfirmasi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
     <div class="col-sm-2"></div>
 </div>

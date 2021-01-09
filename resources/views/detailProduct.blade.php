@@ -12,8 +12,8 @@
         <table class="table table-borderless table-condensed">
             <tbody>
                 <tr>
-                    <th scope="row" class="table-header">Price per 100 ml</th>
-                    <td>{{$product->price}}</td>
+                    <th scope="row" class="table-header">Price</th>
+                    <td>Rp. {{ number_format($product->price) }}/100ml</td>
                 </tr>
                 <tr>
                     <th scope="row" class="table-header">Stock</th>
