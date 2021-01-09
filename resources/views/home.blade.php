@@ -13,7 +13,7 @@
     <!-- Pesan Sekarang dan Keunggulan -->
     <div class="card1">
         <br>
-            <a href="{{ url('/view-transaction') }}"><button class="button button5">PESAN SEKARANG</button></a>
+            <a href="{{ url('/home-call') }}"><button class="button button5">PESAN SEKARANG</button></a>
         <br><br>
         
         <div class="center1">
