@@ -65,9 +65,8 @@ form .input-group .input-group-append button:hover{
     color: black;
 }
 
-.row #paging nav{
-    text-align: center;
-    margin-bottom: 21px;
+.pagination{
+    margin-bottom: 13px;
 }
 
 .pagination>li.active>span{

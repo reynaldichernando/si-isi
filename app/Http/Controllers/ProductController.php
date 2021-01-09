@@ -17,7 +17,7 @@ class ProductController extends Controller
         $auth = Auth::check();
 
         $search = $request->input('search');
-        $products = Product::where('name', 'like', "%$search%")->paginate(4);
+        $products = Product::where('name', 'like', "%$search%")->paginate(8);
         $categories = Category::all();
 
 

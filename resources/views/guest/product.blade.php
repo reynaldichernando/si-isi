@@ -31,6 +31,8 @@
         </div>
     @endforeach
     <!-- paginate pages -->
-    <div class="col-sm-12" id="paging">{{ $products->withQueryString()->links() }}</div>
+    <div class="col-sm-12">
+        <div class="pagination justify-content-center">{{ $products->withQueryString()->links() }}</div>
+    </div>
 </div>
 @endsection
