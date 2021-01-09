@@ -1,11 +1,11 @@
 .head {
-    background-color: #40514e;
+    background-color: #11999e;
     margin: 0;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #11999e;
     position: fixed;
     top: 0;
     width: 100%;
@@ -14,7 +14,6 @@
 .left{
     float: left;
     overflow: hidden;
-    background-color: #333;
     padding: 14px 16px;
 }
 
@@ -26,12 +25,11 @@
 .right{
     float: right;
     overflow: hidden;
-    background-color: #333;
     padding: 14px 16px;
 }
 
 .topnav a {
-    color: #f2f2f2;
+    color: #40514e;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -39,7 +37,7 @@
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #30e3ca;
     color: black;
 }
 
