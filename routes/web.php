@@ -50,6 +50,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/delete-product={id}', 'ProductController@deleteProduct');
     // page => pemesanan
     Route::get('/view-transaction', 'TransactionController@showTransaction');
+    Route::get('/finish-transaction={id}', 'TransactionController@deleteTransaction');
     // page => logout admin
     Route::get('/logout', 'AuthController@logout');
 });

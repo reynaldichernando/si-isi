@@ -44,6 +44,9 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="col-sm-12" id="add-button">
+                    <a href="/finish-transaction={{$item->id}}" class="btn btn-outline-dark" style="color: aliceblue;">Selsaikan Pemesanan</a>
+                </div>
             @endforeach
         </ul>
     </div>
