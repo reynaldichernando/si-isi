@@ -30,7 +30,7 @@
             <label for="region">Kecamatan</label>
             <select name="region" id="region" class="custom-select">
                 @foreach ($regions as $region)
-                    <option value="{{ $region->name }}"> {{ $region->name }} </option>
+                    <option value="{{ $region->id }}"> {{ $region->name }} </option>
                 @endforeach
             </select>
         </div>

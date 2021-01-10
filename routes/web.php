@@ -47,4 +47,4 @@ Route::get('/detail-product={id}', 'ProductController@showDetailProduct');
 
 // page => panggilan rumah
 Route::get('/home-call', 'HomecallController@showForm')->name('confirm_call');
-Route::post('/confirm-call', 'HomecallController@showConfirm');
+Route::post('/home-call', 'HomecallController@addTransaction');
