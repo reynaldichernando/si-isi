@@ -99,13 +99,10 @@
                                     <li class="list-group-item">{{ $product->name }}</li>
                                 @endforeach
                             </ul>
-                            <h5>Harga Pemesanan</h5>
-                            <div class="form-group">
-                                <label for="address">Price</label>
-                                <div>Rp. <span id="regionPrice"></span></div>
-                            </div>
-                            <h5>Cara Pembayaran</h5>
-                            <div id="payment-method">OVO</div>
+                            <h5 id="mdl-price">Harga Pemesanan</h5>
+                            <h6>Rp. <span id="regionPrice"></span></h6>
+                            <h5 id="mdl-payment">Cara Pembayaran</h5>
+                            <h6 id="payment-method">OVO</h6>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-outline-dark" type="submit">Konfirmasi</button>

@@ -43,6 +43,18 @@ div .row{
     overflow-y: auto;
 }
 
+#mdl-price{
+    margin-top: 16px;
+}
+
+#mdl-payment{
+    margin-top: 8px;
+}
+
+#payment-method{
+    margin-bottom: 0px;
+}
+
 .modal-footer{
     background-color: #11999e;
     color: white;
