@@ -43,7 +43,7 @@
         <!-- caller date -->
         <div class="form-group">
             <label for="date">Tanggal Panggilan</label>
-            <input type="date" class="form-control" name="address" id="address">
+            <input type="date" class="form-control" name="date" id="date">
         </div>
         <!-- caller time -->
         <div class="form-group">
@@ -96,7 +96,7 @@
                         </ul>
                         <h5>Harga Pemesanan</h5>
                         <!-- <h5>Cara Pembayaran <span>{{ \Request::get('payment') }}</span></h5> -->
-                        <h5>Cara Pembayaran</h5>
+                        <h5>Cara Pembayaran {{ Request::input('payment') }}</h5>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-outline-dark" type="submit">Konfirmasi</button>

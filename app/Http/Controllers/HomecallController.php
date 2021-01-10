@@ -32,7 +32,7 @@ class HomecallController extends Controller
             'address'           => 'required',
             'date'              => 'required',
             'time'              => 'required',
-            'phone'             => 'required|integer',
+            'phone'             => 'required',
             'email'             => 'required|email',
             'payment'           => 'required',
         ];
@@ -45,7 +45,6 @@ class HomecallController extends Controller
             'date.required'              => 'Tanggal panggilan harus diisi.',
             'time.required'              => 'Waktu harus diisi.',
             'phone.required'             => 'Nomor handphone harus diisi.',
-            'phone.integer'              => 'Nomor handphone harus angka.',
             'email.required'             => 'Email harus diisi.',
             'email.email'                => 'Email tidak valid.',
             'payment.required'           => 'Cara pembayaran harus diisi.',
