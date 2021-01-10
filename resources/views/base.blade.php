@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- styles css -->
-    <link href="{{ asset('css/base_styles.css') }}" rel="stylesheet">
+    <link href="/css/base_styles.css" rel="stylesheet">
     <title>Si Isi</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
         <h5 class="my-0 mr-md-auto font-weight-normal">
             <a href="{{ url('/') }}"><img src="{{ url('/') }}/assets/other/logo.png" alt="no image" width="70" height="40"></a>
         </h5>
-        
+
         <nav class="my-2 my-md-0 mr-md-3" id="header">
             <a class="p-2 text-dark" href="{{ url('/') }}">SI ISI</a>
             @if ($auth)

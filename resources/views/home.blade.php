@@ -1,6 +1,6 @@
 @extends('base')
 <!-- styles css -->
-<link href="{{ asset('css/home_styles.css') }}" rel="stylesheet">
+<link href="/css/home_styles.css" rel="stylesheet">
 @section('body')
 <div class="row">
     <!-- Banner -->
