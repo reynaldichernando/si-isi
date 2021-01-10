@@ -37,10 +37,6 @@
                 @endforeach
             </select>
         </div>
-        <div class="form-group">
-            <label for="address">Price</label>
-            <div>Rp. <span id="regionPrice"></span></div>
-        </div>
         <!-- caller address -->
         <div class="form-group">
             <label for="address">Alamat</label>
@@ -104,7 +100,10 @@
                                 @endforeach
                             </ul>
                             <h5>Harga Pemesanan</h5>
-                            <!-- <h5>Cara Pembayaran <span>{{ \Request::get('payment') }}</span></h5> -->
+                            <div class="form-group">
+                                <label for="address">Price</label>
+                                <div>Rp. <span id="regionPrice"></span></div>
+                            </div>
                             <h5>Cara Pembayaran</h5>
                             <div id="payment-method">OVO</div>
                     </div>
@@ -132,28 +131,10 @@
                     $('#regionPrice').html(response.price);
                 },
                 error: function(response){
-                    console.log("asdlkjhsad");
+                    alert('Error loading region price');
                 }
             })
         })
-
-        // $('#region').change(function (event) {
-        //     $.ajax({
-        //         url: '/getRegionPrice',
-        //         type: 'GET',
-        //         data: {
-        //             id: $('#region').val()
-        //         },
-        //         success: function (response) {
-        //             // set value here
-        //             alert(response)
-        //         },
-        //         error: function (response) {
-
-        //         }
-        //     })
-        // })
-
 
         $('#payment').trigger('change');
         $('#region').trigger('change');
