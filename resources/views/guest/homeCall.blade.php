@@ -29,50 +29,9 @@
         <div class="form-group mt-3">
             <label for="region">Kecamatan</label>
             <select name="region" id="region" class="custom-select">
-                <option value="Cakung"> Cakung </option>
-                <option value="Cempaka Putih"> Cempaka Putih </option>
-                <option value="Cengkareng"> Cengkareng </option>
-                <option value="Cilandak"> Cilandak </option>
-                <option value="Cilincing"> Cilincing </option>
-                <option value="Cipayung"> Cipayung </option>
-                <option value="Ciracas"> Ciracas </option>
-                <option value="Duren Sawit"> Duren Sawit </option>
-                <option value="Gambir"> Gambir </option>
-                <option value="Grogol Petamburan"> Grogol Petamburan </option>
-                <option value="Jagakarsa"> Jagakarsa </option>
-                <option value="Jatinegara"> Jatinegara </option>
-                <option value="Johar Baru"> Johar Baru </option>
-                <option value="Kali Deres"> Kali Deres </option>
-                <option value="Kebayoran Baru"> Kebayoran Baru </option>
-                <option value="Kebayoran Lama"> Kebayoran Lama </option>
-                <option value="Kebun Jeruk"> Kebun Jeruk </option>
-                <option value="Kelapa Gading"> Kelapa Gading </option>
-                <option value="Kemayoran"> Kemayoran </option>
-                <option value="Kembangan"> Kembangan </option>
-                <option value="Kep. Seribu Selatan"> Kep. Seribu Selatan </option>
-                <option value="Kep. Seribu Utara"> Kep. Seribu Utara </option>
-                <option value="Koja"> Koja </option>
-                <option value="Kramat Jati"> Kramat Jati </option>
-                <option value="Makasar"> Makasar </option>
-                <option value="Mampang Prapatan"> Mampang Prapatan </option>
-                <option value="Matraman"> Matraman </option>
-                <option value="Menteng"> Menteng </option>
-                <option value="Pademangan"> Pademangan </option>
-                <option value="Palmerah"> Palmerah </option>
-                <option value="Pancoran"> Pancoran </option>
-                <option value="Pasar Minggu"> Pasar Minggu </option>
-                <option value="Pasar Rebo"> Pasar Rebo </option>
-                <option value="Penjaringan"> Penjaringan </option>
-                <option value="Pesanggrahan"> Pesanggrahan </option>
-                <option value="Pulo Gadung"> Pulo Gadung </option>
-                <option value="Sawah Besar"> Sawah Besar </option>
-                <option value="Senen"> Senen </option>
-                <option value="Setiabudi"> Setiabudi </option>
-                <option value="Taman Sari"> Taman Sari </option>
-                <option value="Tambora"> Tambora </option>
-                <option value="Tanah Abang"> Tanah Abang </option>
-                <option value="Tanjung Priok"> Tanjung Priok </option>
-                <option value="Tebet"> Tebet </option>
+                @foreach ($regions as $region)
+                    <option value="{{ $region->name }}"> {{ $region->name }} </option>
+                @endforeach
             </select>
         </div>
         <!-- caller address -->
@@ -110,7 +69,7 @@
             <label for="payment">Cara Pembayaran</label>
             <select name="payment" id="payment" class="custom-select">
                 <option value="OVO">OVO</option>
-                <option value="Go Pay">GoPay</option>
+                <option value="GoPay">GoPay</option>
                 <option value="Dana">Dana</option>
             </select>
         </div>
