@@ -24,11 +24,11 @@
                         </tr>
                         <tr>
                             <th scope="row" class="table-header">Lokasi</th>
-                            <td>{{ $item->address }}, {{ $item->region }}</td>
+                            <td>{{ $item->address }}, {{ $item->region->name }}</td>
                         </tr>
                         <tr>
                             <th scope="row" class="table-header">Waktu</th>
-                            <td>{{ $item->time }}</td>
+                            <td>{{ $item->time }}, {{ $item->date }}</td>
                         </tr>
                         <tr>
                             <th scope="row" class="table-header">No. HP</th>
