@@ -24,6 +24,14 @@ class HomecallController extends Controller
         ]);
     }
 
+    public function getPrice($id) {
+        $auth = Auth::check();
+
+        $region = Region::find($id);
+
+        return response()->json($region);
+    }
+
     public function addTransaction(Request $request)
     {
         $rules = [
@@ -55,7 +63,7 @@ class HomecallController extends Controller
         // throw message alert if the required inputs are not according to the rules
         if($validator->fails())
             return redirect()->back()->withErrors($validator)->withInput($request->all);
-        
+
         // add new transaction
         $call = new Transaction;
         $call->name = $request->name;

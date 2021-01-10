@@ -31,6 +31,7 @@ Route::group(['middleware' => ['guest']], function() {
     // page => panggilan rumah
     Route::get('/home-call', 'HomecallController@showForm')->name('confirm_call');
     Route::post('/home-call', 'HomecallController@addTransaction');
+    Route::get('/getRegionPrice={id}', 'HomecallController@getPrice');
     // page => produk
     Route::get('/product', 'ProductController@viewProduct');
 });
