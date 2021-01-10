@@ -14,4 +14,8 @@ class Transaction extends Model
         'name', 'region', 'address', 'date', 'time', 'phone',
         'email', 'payment', 
     ];
+
+    public function region(){
+        return $this->belongsTo(Region::class);
+    }
 }
