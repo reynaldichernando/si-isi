@@ -11,8 +11,10 @@
     <!-- Pesan Sekarang dan Keunggulan -->
     <div class="card1">
         <br>
+        @if ($auth == false)
             <a href="/home-call"><button class="button button5">PESAN SEKARANG</button></a>
-        <br><br>
+            <br><br>
+        @endif
         <div class="center1">
             <h3>KEUNGGULAN</h3>
             <ul class="a">
@@ -23,7 +25,9 @@
     </div>
     <!-- Cara Isi Ulang -->
     <div class="container">
-        <br><br><br><br>
+        @if ($auth == false)
+            <br><br><br><br>
+        @endif
         <h3 class="judul">CARA ISI ULANG</h3>
         <div class="clearfix">
             <div class="box">
