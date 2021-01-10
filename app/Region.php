@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Region extends Model
 {
-    protected $table = 'categories';
+    protected $table = 'regions';
 
     public $timestamps = false;
 
     protected $fillable = [
-        'name',
+        'name', 'price',
     ];
 }
