@@ -3,9 +3,9 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Cambria !important;
   padding: 10px;
-  background: white;
+  background-color: #e4f9f5 !important;
 }
 
 .container {
@@ -18,11 +18,10 @@ body {
   width: 100%;
   text-align: center;
   font-size: 18px;
-
 }
 
 .center1 {
-  padding: 70px 0;
+  padding: 50px 0;
   text-align: left;
   border: 3px #11999e   ;
   background: #11999e;
@@ -31,6 +30,10 @@ body {
   margin: 20px;
   border-radius: 25px;
   color: white;
+}
+
+.center1 p{
+  font-size: 17px;
 }
 
 .banner { 
@@ -45,11 +48,15 @@ body {
   float: left;
   width: 33.33%;
   padding: 30px;
-  background-color:#e4f9f5;
+  background-color:white;
   border-radius: 25px;
   height: auto;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.box img{
+  margin-bottom: 17px;
 }
 
 .clearfix::after {
@@ -90,9 +97,13 @@ body {
     margin: 20px;
 }
 
+.center h1, .center1 h3, .judul{
+  font-weight: bold;
+}
+
 /* Add a card effect for articles */
 .card1 {
-  background-image: url("assets/other/home_banner.jpg");
+  background-image: url("{{ url('/') }}/assets/other/home_banner.jpg");
   background-repeat: no-repeat;
   padding: 20px 20px 20px 20px ;
   width: 100%;
@@ -141,16 +152,16 @@ body {
 }
 
 .button5 {
-  background-color: #11999e;
+  background-color: #40514e;
   color: white;
   border-radius: 25px;
   width: 200px;
   height: 60px;
-  border: 2px solid #11999e;
+  border: 2px solid #40514e;
 }
 
 .button5:hover {
-  background-color: white;
+  background-color: #e4f9f5;
   color: black;
   border: 2px solid #11999e;
 }
