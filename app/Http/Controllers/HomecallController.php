@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Region;
 use App\Transaction;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -74,6 +75,7 @@ class HomecallController extends Controller
         $call->phone = $request->phone;
         $call->email = $request->email;
         $call->payment = $request->payment;
+        $call->created_at = Carbon::now();
         $save = $call->save();
 
         if($save) return redirect('/');
