@@ -4,17 +4,20 @@
 <div class="row">
     <!-- header name -->
     <div class="col-sm-12">
-        <div class="pb-2 mt-4 mb-2 border-bottom"><h1 id="page-header">Panggilan Rumah</h1></div>
+        <div class="pb-2 mt-4 mb-2 border-bottom">
+            <h1 id="page-header">Panggilan Rumah</h1>
+        </div>
     </div>
     <div class="col-sm-2"></div>
-    <form action="{{ route('confirm_call') }}" method="POST" enctype="multipart/form-data" class="col-sm-8">
+    <form action="{{ route('confirm_call') }}" method="POST" enctype="multipart/form-data"
+        class="col-sm-8">
         @csrf
         <!-- error message -->
         @if(count($errors) > 0)
             <div class="alert alert-danger col-sm-12" role="alert">
                 Something is wrong:
                 <ul>
-                    @foreach ($errors->all() as $error)
+                    @foreach($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
@@ -29,7 +32,7 @@
         <div class="form-group mt-3">
             <label for="region">Kecamatan</label>
             <select name="region" id="region" class="custom-select">
-                @foreach ($regions as $region)
+                @foreach($regions as $region)
                     <option value="{{ $region->id }}"> {{ $region->name }} </option>
                 @endforeach
             </select>
@@ -38,7 +41,8 @@
         <div class="form-group">
             <label for="address">Alamat</label>
             <input type="text" class="form-control" name="address" placeholder="Masukkan alamat anda..." id="address">
-            <small id="addressHelp" class="form-text text-muted">Alamat yang dimasukkan merupakan nama jalan sampai no rumah.</small>
+            <small id="addressHelp" class="form-text text-muted">Alamat yang dimasukkan merupakan nama jalan sampai no
+                rumah.</small>
         </div>
         <!-- caller date -->
         <div class="form-group">
@@ -57,7 +61,8 @@
         <!-- caller phone -->
         <div class="form-group">
             <label for="phone">Nomor Handphone</label>
-            <input type="text" class="form-control" name="phone" placeholder="Masukkan nomor telepon anda..." id="phone">
+            <input type="text" class="form-control" name="phone" placeholder="Masukkan nomor telepon anda..."
+                id="phone">
         </div>
         <!-- caller email -->
         <div class="form-group">
@@ -89,14 +94,15 @@
                     <div class="modal-body">
                         <!-- available products -->
                         <h5>Produk Tersedia</h3>
-                        <ul class="list-group">
-                            @foreach ($products as $product)
-                                <li class="list-group-item">{{ $product->name }}</li>
-                            @endforeach
-                        </ul>
-                        <h5>Harga Pemesanan</h5>
-                        <!-- <h5>Cara Pembayaran <span>{{ \Request::get('payment') }}</span></h5> -->
-                        <h5>Cara Pembayaran</h5>
+                            <ul class="list-group">
+                                @foreach($products as $product)
+                                    <li class="list-group-item">{{ $product->name }}</li>
+                                @endforeach
+                            </ul>
+                            <h5>Harga Pemesanan</h5>
+                            <!-- <h5>Cara Pembayaran <span>{{ \Request::get('payment') }}</span></h5> -->
+                            <h5>Cara Pembayaran</h5>
+                            <div id="payment-method">OVO</div>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-outline-dark" type="submit">Konfirmasi</button>
@@ -105,6 +111,32 @@
             </div>
         </div>
     </form>
-    <div class="col-sm-2"></div>
+    <script>
+        $('#payment').change(function (event) {
+            let value = $(event.target).val()
+            $('#payment-method').text(value);
+        })
+
+        $('#region').change(function (event) {
+            $.ajax({
+                url: '/getRegionPrice',
+                type: 'GET',
+                data: {
+                    id: $('#region').val()
+                },
+                success: function (response) {
+                    // set value here
+                    alert(response)
+                },
+                error: function (response) {
+
+                }
+            })
+        })
+
+
+        $('#payment').trigger('change');
+        $('#region').trigger('change');
+    </script>
 </div>
 @endsection
