@@ -31,11 +31,15 @@
         <!-- caller region  -->
         <div class="form-group mt-3">
             <label for="region">Kecamatan</label>
-            <select name="region" id="region" class="custom-select">
+            <select name="region" id="region" class="custom-select" onchange="">
                 @foreach($regions as $region)
                     <option value="{{ $region->id }}"> {{ $region->name }} </option>
                 @endforeach
             </select>
+        </div>
+        <div class="form-group">
+            <label for="address">Price</label>
+            <div>Rp. <span id="regionPrice"></span></div>
         </div>
         <!-- caller address -->
         <div class="form-group">
@@ -112,27 +116,43 @@
         </div>
     </form>
     <script>
+
+
         $('#payment').change(function (event) {
             let value = $(event.target).val()
             $('#payment-method').text(value);
         })
 
-        $('#region').change(function (event) {
+        $('#region').change(function (event){
             $.ajax({
-                url: '/getRegionPrice',
+                url :'/getRegionPrice='+$('#region').val(),
                 type: 'GET',
-                data: {
-                    id: $('#region').val()
+                success: function(response){
+                    console.log(response);
+                    $('#regionPrice').html(response.price);
                 },
-                success: function (response) {
-                    // set value here
-                    alert(response)
-                },
-                error: function (response) {
-
+                error: function(response){
+                    console.log("asdlkjhsad");
                 }
             })
         })
+
+        // $('#region').change(function (event) {
+        //     $.ajax({
+        //         url: '/getRegionPrice',
+        //         type: 'GET',
+        //         data: {
+        //             id: $('#region').val()
+        //         },
+        //         success: function (response) {
+        //             // set value here
+        //             alert(response)
+        //         },
+        //         error: function (response) {
+
+        //         }
+        //     })
+        // })
 
 
         $('#payment').trigger('change');
