@@ -8,12 +8,15 @@ class Transaction extends Model
 {
     protected $table = 'transactions';
 
-    public $timestamps = false;
-
     protected $fillable = [
         'name', 'region', 'address', 'date', 'time', 'phone',
-        'email', 'payment', 
+        'email', 'payment', 'created_at', 
     ];
+
+    public function getUpdatedAtColumn()
+    {
+        return null;
+    }
 
     public function region(){
         return $this->belongsTo(Region::class);
