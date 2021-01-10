@@ -16,7 +16,7 @@ class CreateTransactionsTable extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('region');
+            $table->foreignId('region_id')->constrained('regions');
             $table->text('address');
             $table->date('date');
             $table->string('time');
