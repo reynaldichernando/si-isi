@@ -20,7 +20,7 @@
                     <th scope="row" id="table-header"><a href="/detail-product={{ $product->id }}">{{ $product->name }}</a> </th>
                     <td id="delete-button"><a href="/detail-product={{ $product->id }}">Detail</a></td>
                     <td id="edit-button"><a href="/edit-product={{ $product->id }}">Ubah</a></td>
-                    <td id="delete-button"><a href="/delete-product={{ $product->id }}">Hapus</a></td>
+                    <td id="delete-button"><a href="/delete-product={{ $product->id }}" onclick="return  confirm('do you want to delete Y/N')">Hapus</a></td>
                 </tr>
             </table>
         </li>

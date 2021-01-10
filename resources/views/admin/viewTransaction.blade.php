@@ -45,7 +45,7 @@
                     </tbody>
                 </table>
                 <div class="col-sm-12" id="add-button">
-                    <a href="/finish-transaction={{$item->id}}" class="btn btn-outline-dark" style="color: aliceblue;">Selsaikan Pemesanan</a>
+                    <a href="/finish-transaction={{$item->id}}" class="btn btn-outline-dark" style="color: aliceblue;" onclick="return  confirm('do you want to delete Y/N')">Selsaikan Pemesanan</a>
                 </div>
             @endforeach
         </ul>
